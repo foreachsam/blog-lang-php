@@ -500,7 +500,6 @@ article li ul {
   font-size: 10px;
   text-align: right;
   letter-spacing: 2px;
-  text-transform: uppercase;
 }
 .content-tag:before {
   content: "Tags: ";
