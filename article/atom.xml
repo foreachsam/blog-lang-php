@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[PHP Explore]]></title>
+  <subtitle><![CDATA[PHP 探索]]></subtitle>
+  <link href="/blog-lang-php/article/atom.xml" rel="self"/>
+  <link href="http://foreachsam.github.io/blog-lang-php/article/"/>
+  <updated>2014-11-27T09:48:43.464Z</updated>
+  <id>http://foreachsam.github.io/blog-lang-php/article/</id>
+  
+  <author>
+    <name><![CDATA[foreachsam]]></name>
+    
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[開站拉！]]></title>
+    <link href="http://foreachsam.github.io/blog-lang-php/article/read/site/start/"/>
+    <id>http://foreachsam.github.io/blog-lang-php/article/read/site/start/</id>
+    <published>2014-11-07T18:44:56.000Z</published>
+    <updated>2014-11-07T10:47:37.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="開站拉！">開站拉！</h1>
+<p>開站拉，這個部落格，用來紀錄對PHP的探索心得!</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[開站紀錄！]]>
+    
+    </summary>
+    
+      <category term="start" scheme="http://foreachsam.github.io/blog-lang-php/article/find/tag/start/"/>
+    
+      <category term="site" scheme="http://foreachsam.github.io/blog-lang-php/article/find/categorie/site/"/>
+    
+      <category term="update" scheme="http://foreachsam.github.io/blog-lang-php/article/find/categorie/site/update/"/>
+    
+  </entry>
+  
+</feed>
