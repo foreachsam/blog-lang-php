@@ -103,7 +103,10 @@
 <p>或是</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>php -r <span class="string">"readfile('https://getcomposer.org/installer');"</span> | php</div></pre></td></tr></table></figure>
 
-<p>以下介紹手動安裝的方式。</p>
+<p>安裝到「~/bin」範例如下</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># install to ~/bin</span></div><div class="line"><span class="built_in">cd</span> ~</div><div class="line">mkdir bin -p</div><div class="line">curl <span class="operator">-s</span>S https://getcomposer.org/installer | php -- --install-dir=bin --filename=composer</div></pre></td></tr></table></figure>
+
+<p>這篇主要是要介紹手動安裝的方式。</p>
 <h2 id="手動安裝">手動安裝</h2>
 <p>下載最新的「composer.phar」。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>wget -c <span class="symbol">https:</span>/<span class="regexp">/getcomposer.org/composer</span>.phar</div></pre></td></tr></table></figure>
