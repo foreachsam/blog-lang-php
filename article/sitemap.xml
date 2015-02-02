@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://foreachsam.github.io/blog-lang-php/article/read/composer/install/</loc>
+    <lastmod>2015-02-02T07:58:59.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://foreachsam.github.io/blog-lang-php/article/read/resource/index/</loc>
     <lastmod>2015-01-13T11:22:33.000Z</lastmod>
   </url>

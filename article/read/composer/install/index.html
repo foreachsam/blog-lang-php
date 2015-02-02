@@ -1,26 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[PHP Exploration]]></title>
-  <subtitle><![CDATA[PHP 探索]]></subtitle>
-  <link href="/blog-lang-php/article/atom.xml" rel="self"/>
-  <link href="http://foreachsam.github.io/blog-lang-php/article/"/>
-  <updated>2015-02-02T08:00:22.815Z</updated>
-  <id>http://foreachsam.github.io/blog-lang-php/article/</id>
-  
-  <author>
-    <name><![CDATA[foreachsam]]></name>
-    
-  </author>
-  
-  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
-  
-  <entry>
-    <title><![CDATA[Ubuntu環境下，如何手動安裝Composer]]></title>
-    <link href="http://foreachsam.github.io/blog-lang-php/article/read/composer/install/"/>
-    <id>http://foreachsam.github.io/blog-lang-php/article/read/composer/install/</id>
-    <published>2015-02-02T15:41:33.000Z</published>
-    <updated>2015-02-02T07:58:59.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="Ubuntu環境下，如何手動安裝Composer">Ubuntu環境下，如何手動安裝Composer</h1>
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title> Ubuntu環境下，如何手動安裝Composer | PHP Exploration </title>
+	<meta property="og:title" content=" Ubuntu環境下，如何手動安裝Composer | PHP Exploration " />
+	<meta name="twitter:title" content=" Ubuntu環境下，如何手動安裝Composer | PHP Exploration ">
+
+	<meta property="og:type" content="article">
+	<meta name="twitter:card" content="summary">
+
+	<meta name="description" content=" Ubuntu環境下，如何手動安裝Composer ">
+	<meta property="og:description" content=" Ubuntu環境下，如何手動安裝Composer " />
+	<meta name="twitter:description" content=" Ubuntu環境下，如何手動安裝Composer " />
+
+	<link rel="icon" type="image/x-icon" href="http://foreachsam.github.io/blog-lang-php/article/asset/img/favicon.png">
+
+	<link rel="image_src" href="http://foreachsam.github.io/blog-lang-php/article/asset/img/logo.png" >
+	<meta property="og:image" content="http://foreachsam.github.io/blog-lang-php/article/asset/img/logo.png" />
+
+	<link href="http://foreachsam.github.io/blog-lang-php/article/atom.xml" title="PHP Exploration" type="application/atom+xml" rel="alternative">
+
+	<link rel="canonical" href="/blog-lang-php/article/read/composer/install/">
+
+	<link rel="stylesheet" href="/blog-lang-php/article/asset/css/style.css">
+
+</head>
+
+<body>
+
+	<div class="layout-header">
+		<header class="header">
+			<div class="layout-logo">
+				<div class="panel-logo">
+
+					<div class="box-logo">
+						<a href="/blog-lang-php/article/" title="PHP Exploration"><img src="/blog-lang-php/article/asset/img/logo.png" class="img-logo"></a>
+					</div>
+					<div class="box-main-title">
+						<h1><a href="/blog-lang-php/article/">PHP Exploration</a></h1>
+					</div>
+					<div class="box-sub-title">
+
+						<p>PHP 探索</p>
+
+					</div>
+				</div>
+			</div>
+			<div class="layout-menu">
+				<div class="box-menu-list">
+					<nav class="page-nav">
+						<ul class="menu-list">
+
+							<li class="box-menu-item"><a href="/blog-lang-php/article/"><span class="menu-item">Home</span></a></li>
+
+							<li class="box-menu-item"><a href="/blog-lang-php/article/find/archive/"><span class="menu-item">Sitemap</span></a></li>
+
+						</ul>
+					</nav>
+
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<div class="layout-content">
+
+
+		<div class="row panel-content panel-post-item">
+			<div class="box-post-item">
+				<article class="post-item" itemscope itemtype="http://schema.org/Article">
+
+
+
+
+					<p class="content-meta">
+						<span class="meta-date" itemprop="datePublished" content="Feb 2 2015">Feb 2 2015</span>
+
+
+							<span class="meta-category">
+
+<a class="category-link" href="/blog-lang-php/article/find/category/composer/">composer</a>
+							</span>
+
+					</p>
+
+
+					<h2 class="box-content-title">
+						<a href="/blog-lang-php/article/read/composer/install/"  itemprop="url"><span class="content-title" itemprop="name">Ubuntu環境下，如何手動安裝Composer</span></a>
+					</h2>
+
+					<div class="content post-item-content" itemprop="articleBody">
+
+<h1 id="Ubuntu環境下，如何手動安裝Composer">Ubuntu環境下，如何手動安裝Composer</h1>
 <h2 id="一般安裝">一般安裝</h2>
 <p>一般可以參照「<a href="https://getcomposer.org/download/" target="_blank" rel="external">這一頁</a>」來安裝。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>curl -sS <span class="symbol">https:</span>/<span class="regexp">/getcomposer.org/installer</span> | php</div></pre></td></tr></table></figure>
@@ -64,69 +139,62 @@
 
 <p>若已經是最新的版本，就會看到類似下面的訊息</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">You are already <span class="keyword">using</span> composer <span class="built_in">version</span> <span class="number">8</span>d6ab70ae590e84cc94871a3ee08be2b09979520.</div></pre></td></tr></table></figure>
-]]></content>
-    <summary type="html">
-    <![CDATA[Ubuntu環境下，如何手動安裝Composer]]>
-    
-    </summary>
-    
-      <category term="basic-skill" scheme="http://foreachsam.github.io/blog-lang-php/article/find/tag/basic-skill/"/>
-    
-      <category term="composer" scheme="http://foreachsam.github.io/blog-lang-php/article/find/category/composer/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[PHP 資源]]></title>
-    <link href="http://foreachsam.github.io/blog-lang-php/article/read/resource/index/"/>
-    <id>http://foreachsam.github.io/blog-lang-php/article/read/resource/index/</id>
-    <published>2015-01-13T18:15:26.000Z</published>
-    <updated>2015-01-13T11:22:33.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="PHP_資源">PHP 資源</h1>
-<h2 id="套件集散地">套件集散地</h2>
-<ul>
-<li><a href="http://phptrends.com" target="_blank" rel="external">phptrends</a></li>
-<li><a href="https://packagist.org/" target="_blank" rel="external">packagist</a></li>
-<li><a href="http://pear.php.net/" target="_blank" rel="external">pear</a></li>
-<li><a href="http://pecl.php.net/" target="_blank" rel="external">pecl</a></li>
-</ul>
-<h2 id="Test_Http_Request">Test Http Request</h2>
-<ul>
-<li><a href="http://httpbin.org/" target="_blank" rel="external">httpbin</a></li>
-<li><a href="http://requestb.in/" target="_blank" rel="external">requestb</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[PHP 資源]]>
-    
-    </summary>
-    
-      <category term="index" scheme="http://foreachsam.github.io/blog-lang-php/article/find/tag/index/"/>
-    
-      <category term="resource" scheme="http://foreachsam.github.io/blog-lang-php/article/find/category/resource/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[開站拉！]]></title>
-    <link href="http://foreachsam.github.io/blog-lang-php/article/read/site/start/"/>
-    <id>http://foreachsam.github.io/blog-lang-php/article/read/site/start/</id>
-    <published>2014-11-07T18:44:56.000Z</published>
-    <updated>2014-11-07T10:47:37.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="開站拉！">開站拉！</h1>
-<p>開站拉，這個部落格，用來紀錄對PHP的探索心得!</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[開站紀錄！]]>
-    
-    </summary>
-    
-      <category term="start" scheme="http://foreachsam.github.io/blog-lang-php/article/find/tag/start/"/>
-    
-      <category term="site" scheme="http://foreachsam.github.io/blog-lang-php/article/find/category/site/"/>
-    
-      <category term="update" scheme="http://foreachsam.github.io/blog-lang-php/article/find/category/site/update/"/>
-    
-  </entry>
-  
-</feed>
+
+					</div>
+
+
+					<div class="content-tag">
+
+<a class="tag-link" href="/blog-lang-php/article/find/tag/basic-skill/">basic-skill</a>
+
+					</div>
+
+
+
+				</article>
+			</div>
+
+		</div>
+
+		<div class="panel-post-nav">
+			<div class="box-post-nav">
+
+
+
+
+					<a href="/blog-lang-php/article/read/resource/index/" title="PHP 資源">Next &rarr;</a>
+
+
+			</div>
+		</div>
+
+
+	</div>
+
+	<div class="layout-footer" style="clear: both">
+		<div class="panel-footer">
+			<div class="box-footer">
+				<footer class="footer">
+					<p class="cr">&copy; 2015 <a href="http://foreachsam.github.io"  target="_blank" target="_blank">foreachsam</a> </p>
+
+					<span class="theme">Powered: <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme: <a href="https://github.com/foreachsam/hexo-theme-monogatari" target="_blank">Monogatari</a></span>
+				</footer>
+			</div>
+		</div>
+	</div>
+
+
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-56999876-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+
+
+</body>
+</html>
