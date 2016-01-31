@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://foreachsam.github.io/blog-lang-php/article/read/zend/zend-expressive/meet/</loc>
+    <lastmod>2016-01-31T21:26:49.187Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://foreachsam.github.io/blog-lang-php/article/read/composer/install/</loc>
     <lastmod>2016-01-31T20:20:25.871Z</lastmod>
   </url>

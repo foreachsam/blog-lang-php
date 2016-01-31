@@ -4,7 +4,7 @@
   <subtitle><![CDATA[PHP 探索]]></subtitle>
   <link href="/blog-lang-php/article/atom.xml" rel="self"/>
   <link href="http://foreachsam.github.io/blog-lang-php/article/"/>
-  <updated>2016-01-31T20:20:25.871Z</updated>
+  <updated>2016-01-31T21:26:49.187Z</updated>
   <id>http://foreachsam.github.io/blog-lang-php/article/</id>
   
   <author>
@@ -13,6 +13,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Zend Expressive]]></title>
+    <link href="http://foreachsam.github.io/blog-lang-php/article/read/zend/zend-expressive/meet/"/>
+    <id>http://foreachsam.github.io/blog-lang-php/article/read/zend/zend-expressive/meet/</id>
+    <published>2016-01-31T21:15:50.000Z</published>
+    <updated>2016-01-31T21:26:49.187Z</updated>
+    <content type="html"><![CDATA[<h1 id="Zend_Expressive"><a href="#Zend_Expressive" class="headerlink" title="Zend Expressive"></a>Zend Expressive</h1><h2 id="u7DE3_u8D77"><a href="#u7DE3_u8D77" class="headerlink" title="緣起"></a>緣起</h2><p>從「<a href="http://framework.zend.com/blog/2016-01-28-expressive-1.0-stable.html" target="_blank" rel="external">這篇</a>」看到「<a href="https://zendframework.github.io/zend-expressive/" target="_blank" rel="external">Zend Expressive</a>」。</p>
+<h2 id="u76F8_u95DC_u7DB2_u5740"><a href="#u76F8_u95DC_u7DB2_u5740" class="headerlink" title="相關網址"></a>相關網址</h2><ul>
+<li><a href="https://zendframework.github.io/zend-expressive/" target="_blank" rel="external">Zend Expressive</a></li>
+</ul>
+<h2 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h2><ul>
+<li><a href="https://github.com/zendframework/zend-expressive-skeleton.git" target="_blank" rel="external">zendframework/zend-expressive-skeleton</a></li>
+<li><a href="https://github.com/zendframework/zend-expressive" target="_blank" rel="external">zendframework/zend-expressive</a></li>
+<li><a href="https://github.com/zendframework/zend-stratigility" target="_blank" rel="external">zendframework/zend-stratigility</a></li>
+<li><a href="https://github.com/phly/conduit" target="_blank" rel="external">phly/conduit</a></li>
+</ul>
+<h2 id="PSR"><a href="#PSR" class="headerlink" title="PSR"></a>PSR</h2><ul>
+<li><a href="http://www.php-fig.org/psr/psr-7/" target="_blank" rel="external">PSR-7</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[Zend Expressive]]>
+    
+    </summary>
+    
+      <category term="meet" scheme="http://foreachsam.github.io/blog-lang-php/article/find/tag/meet/"/>
+    
+      <category term="zend" scheme="http://foreachsam.github.io/blog-lang-php/article/find/category/zend/"/>
+    
+      <category term="zend-expressive" scheme="http://foreachsam.github.io/blog-lang-php/article/find/category/zend/zend-expressive/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Ubuntu環境下，如何手動安裝Composer]]></title>
