@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[Composer Scripts 功能]]></title>
-    <link href="http://foreachsam.github.io/blog-lang-php/article/read/composer/script/"/>
-    <id>http://foreachsam.github.io/blog-lang-php/article/read/composer/script/</id>
+    <link href="http://foreachsam.github.io/blog-lang-php/article/read/composer/scripts/"/>
+    <id>http://foreachsam.github.io/blog-lang-php/article/read/composer/scripts/</id>
     <published>2016-01-31T21:53:50.000Z</published>
     <updated>2016-01-31T21:56:11.851Z</updated>
     <content type="html"><![CDATA[<h1 id="Composer_Scripts__u529F_u80FD"><a href="#Composer_Scripts__u529F_u80FD" class="headerlink" title="Composer Scripts 功能"></a>Composer Scripts 功能</h1><h2 id="u7DE3_u8D77"><a href="#u7DE3_u8D77" class="headerlink" title="緣起"></a>緣起</h2><p>原本知道可以使用(也常用)「<a href="http://php.net/manual/en/features.commandline.webserver.php" target="_blank" rel="external">PHP內建的Web Server</a>」。</p>
