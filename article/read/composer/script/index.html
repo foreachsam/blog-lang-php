@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title> Composer Scripts 功能 | PHP Exploration </title>
+	<meta property="og:title" content=" Composer Scripts 功能 | PHP Exploration " />
+	<meta name="twitter:title" content=" Composer Scripts 功能 | PHP Exploration ">
+
+	<meta property="og:type" content="article">
+	<meta name="twitter:card" content="summary">
+
+	<meta name="description" content=" Composer Scripts 功能 ">
+	<meta property="og:description" content=" Composer Scripts 功能 " />
+	<meta name="twitter:description" content=" Composer Scripts 功能 " />
+
+	<link rel="icon" type="image/x-icon" href="http://foreachsam.github.io/blog-lang-php/article/asset/img/favicon.png">
+
+	<link rel="image_src" href="http://foreachsam.github.io/blog-lang-php/article/asset/img/logo.png" >
+	<meta property="og:image" content="http://foreachsam.github.io/blog-lang-php/article/asset/img/logo.png" />
+
+	<link href="http://foreachsam.github.io/blog-lang-php/article/atom.xml" title="PHP Exploration" type="application/atom+xml" rel="alternative">
+
+	<link rel="canonical" href="/blog-lang-php/article/read/composer/script/index.html">
+
+	<link rel="stylesheet" href="/blog-lang-php/article/asset/css/style.css">
+
+</head>
+
+<body>
+
+	<div class="layout-header">
+		<header class="header">
+			<div class="layout-logo">
+				<div class="panel-logo">
+
+					<div class="box-logo">
+						<a href="/blog-lang-php/article/" title="PHP Exploration"><img src="/blog-lang-php/article/asset/img/logo.png" class="img-logo"></a>
+					</div>
+					<div class="box-main-title">
+						<h1><a href="/blog-lang-php/article/">PHP Exploration</a></h1>
+					</div>
+					<div class="box-sub-title">
+
+						<p>PHP 探索</p>
+
+					</div>
+				</div>
+			</div>
+			<div class="layout-menu">
+				<div class="box-menu-list">
+					<nav class="page-nav">
+						<ul class="menu-list">
+
+							<li class="box-menu-item"><a href="/blog-lang-php/article/"><span class="menu-item">Home</span></a></li>
+
+							<li class="box-menu-item"><a href="/blog-lang-php/article/find/archive/"><span class="menu-item">Sitemap</span></a></li>
+
+						</ul>
+					</nav>
+
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<div class="layout-content">
+
+
+		<div class="row panel-content panel-post-item">
+			<div class="box-post-item">
+				<article class="post-item" itemscope itemtype="http://schema.org/Article">
+
+
+
+
+					<p class="content-meta">
+						<span class="meta-date" itemprop="datePublished" content="2016-02-01">2016-02-01</span>
+
+
+							<span class="meta-category">
+
+<a class="category-link" href="/blog-lang-php/article/find/category/composer-scripts/">composer - scripts</a>
+							</span>
+
+					</p>
+
+
+					<h2 class="box-content-title">
+						<a href="/blog-lang-php/article/read/composer/script/"  itemprop="url"><span class="content-title" itemprop="name">Composer Scripts 功能</span></a>
+					</h2>
+
+					<div class="content post-item-content" itemprop="articleBody">
+
+<h1 id="Composer_Scripts__u529F_u80FD"><a href="#Composer_Scripts__u529F_u80FD" class="headerlink" title="Composer Scripts 功能"></a>Composer Scripts 功能</h1><h2 id="u7DE3_u8D77"><a href="#u7DE3_u8D77" class="headerlink" title="緣起"></a>緣起</h2><p>原本知道可以使用(也常用)「<a href="http://php.net/manual/en/features.commandline.webserver.php" target="_blank" rel="external">PHP內建的Web Server</a>」。</p>
+<p>執行</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ php -S localhost:<span class="number">8080</span> -t public/</span><br></pre></td></tr></table></figure>
+<p>或是執行</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ php -S <span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">8080</span> -t public/</span><br></pre></td></tr></table></figure>
+<p>從「<a href="https://zendframework.github.io/zend-expressive/getting-started/standalone/" target="_blank" rel="external">這篇</a>」學到的小技巧，</p>
+<p>可以將上面的指令整合到「composer」，類似像「npm」的「<a href="https://docs.npmjs.com/misc/scripts" target="_blank" rel="external">scripts</a>」功能。<br>可以參考「composer這裡的<a href="https://getcomposer.org/doc/articles/scripts.md#running-scripts-manually" target="_blank" rel="external">使用說明</a>」。</p>
+<h2 id="u7BC4_u4F8B"><a href="#u7BC4_u4F8B" class="headerlink" title="範例"></a>範例</h2><p>只要在「composer.json」，寫上下面的設定</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    "<span class="attribute">scripts</span>": <span class="value">&#123;</span><br><span class="line">        "<span class="attribute">serve</span>": <span class="value"><span class="string">"php -S localhost:8080 -t public/"</span></span><br><span class="line">    </span>&#125;   </span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
+<p>然後就可以執行</p>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>composer serve</span><br></pre></td></tr></table></figure>
+<p>就會顯示下面的訊息</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; php -S localhost:<span class="number">8080</span> -t <span class="keyword">public</span>/</span><br></pre></td></tr></table></figure>
+<p>然後就可以使用瀏覽器觀看</p>
+<p>例如:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ firefox http://localhost:<span class="number">8080</span></span><br></pre></td></tr></table></figure>
+<p>或是</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ lynx http://localhost:<span class="number">8080</span></span><br></pre></td></tr></table></figure>
+
+					</div>
+
+
+					<div class="content-tag">
+
+<a class="tag-link" href="/blog-lang-php/article/find/tag/basic-skill/">basic-skill</a>
+
+					</div>
+
+
+
+				</article>
+			</div>
+
+		</div>
+
+		<div class="panel-post-nav">
+			<div class="box-post-nav">
+
+
+
+
+					<a href="/blog-lang-php/article/read/zend/zend-expressive/meet/" title="Zend Expressive">Next &rarr;</a>
+
+
+			</div>
+		</div>
+
+
+	</div>
+
+	<div class="layout-footer" style="clear: both">
+		<div class="panel-footer">
+			<div class="box-footer">
+				<footer class="footer">
+					<p class="cr">&copy; 2016 <a href="https://github.com/foreachsam/"  target="_blank" target="_blank">foreachsam</a> </p>
+
+					<span class="theme">Powered: <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme: <a href="https://github.com/foreachsam/hexo-theme-monogatari" target="_blank">Monogatari</a></span>
+				</footer>
+			</div>
+		</div>
+	</div>
+
+
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-56999876-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+
+
+</body>
+</html>
